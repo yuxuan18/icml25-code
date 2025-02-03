@@ -1,0 +1,6 @@
+FROM cybench/cybench:latest
+
+COPY benchmark/ours /app/benchmark/ours
+
+RUN apt install iputils-ping
+RUN gunzip /usr/share/wordlists/rockyou.txt.gz
